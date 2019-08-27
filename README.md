@@ -3,6 +3,11 @@
 #include<conio.h>
 using namespace std;
 
+//ENUMERACIONES
+enum Localidad {Maldonado, CerroPelado, Piriapolis};
+typedef enum {Matematica, IdiomaEspanol,EVP, Informatica, Historia, Geografia, CienciasFisicas, EducacionFisica, Biologia, Sonora, FormacionCristiana} Asignatura;
+enum Liceo {Liceo_1 = 1, Liceo_2, Liceo_3, Liceo_4};
+
 //ESTRUCTURAS
 struct Profesores
 {
@@ -10,23 +15,24 @@ struct Profesores
 	string PrimerNombre[20];
 	string PrimerApellido[20];
 	string Telefono[15];
-	int escalafón;
+	int escalafon;
 	int puntaje;
 	//string localidad[30]; //aqui podemos ver lo de la enumeracion para que ingrese por ejemplo 1 para Maldonado y 2 para Cerro Pelado
 	int horasQuiere;
 	int horasTiene;
 }unProfesor;
-
 struct Nodo
 {
 	int dato; 
 	Nodo *der;
 	Nodo *izq;
 };
-
-//ENUMERACIONES
-//enum Localidad {Maldonado, CerroPelado, Piriapolis};
-enum Asignatura {Matematica, IdiomaEspanol,EVP, Informatica, Historia, Geografia, CienciasFisicas, EducacionFisica, Biologia, Sonora, FormacionCristiana};
+struct Horas
+{
+	Asignatura materiaIngresada;
+	int Tipo;//determina la cantidad de horas que tiene el grupo asignado
+	Liceo NumLiceo;
+};
 
 //Prototipos
 void menu();
