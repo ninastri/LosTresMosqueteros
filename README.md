@@ -27,13 +27,9 @@ return 0;
 
 //Funcion de menu
 void menu(){
-int dato, opcion;
-do{
-cout<<"\t.:Menu:."<<endl;
-cout<<"1. Insertar un nuevo nodo"<<endl;
-cout<<"2. Salir"<<endl;
-cout<<"Opcion: ";
-cin>>opcion;
+
+cout <<" --------------------------------------------------------------\n|\t\tBIENVENIDO AL MENU PRINCIPAL                   |\n --------------------------------------------------------------\n|                                                              |\n| Ingrese una opción para navegar.                             |\n|                                                              |\n|\t1)Agregar                                              |\n|\t2)Modificar                                            |\n|\t3)Buscar                                               |\n|\t4)Eliminar                                             |\n|\t5)Salir                                                |\n|                                                              |\n --------------------------------------------------------------\n\n";
+cin >> opcion;
 
 switch(opcion){
 case 1: cout<<"\nDigite un numero: ";
