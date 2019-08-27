@@ -22,7 +22,7 @@ Nodo *izq;
 };
 
 //ENUMERACIONES
-enum Localidad {Maldonado, CerroPelado, Piriapolis};
+//enum Localidad {Maldonado, CerroPelado, Piriapolis};
 enum Asignatura {Matematica, IdiomaEspanol,EVP, Informatica, Historia, Geografia, CienciasFisicas, EducacionFisica, Biologia, Sonora, FormacionCristiana};
 
 //Prototipos
