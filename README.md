@@ -10,6 +10,8 @@ struct Preofesores
 	string PrimerNombre[20];
 	string PrimerApellido[20];
 	string Telefono[15];
+	int escalafón;
+	int puntaje;
 	//string localidad[30]; //aqui podemos ver lo de la enumeracion para que ingrese por ejemplo 1 para Maldonado y 2 para Cerro Pelado
 	int horasQuiere;
 	int horasTiene;
