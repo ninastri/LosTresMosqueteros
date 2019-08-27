@@ -13,17 +13,17 @@ struct Preofesores
 	//string localidad[30]; //aqui podemos ver lo de la enumeracion para que ingrese por ejemplo 1 para Maldonado y 2 para Cerro Pelado
 	int horasQuiere;
 	int horasTiene;
-
 }unProfesor;
 
-struct Nodo{
-int dato; 
-Nodo *der;
-Nodo *izq;
+struct Nodo
+{
+	int dato; 
+	Nodo *der;
+	Nodo *izq;
 };
 
 //ENUMERACIONES
-enum Localidad {Maldonado, CerroPelado, Piriapolis};
+//enum Localidad {Maldonado, CerroPelado, Piriapolis};
 enum Asignatura {Matematica, IdiomaEspanol,EVP, Informatica, Historia, Geografia, CienciasFisicas, EducacionFisica, Biologia, Sonora, FormacionCristiana};
 
 //Prototipos
