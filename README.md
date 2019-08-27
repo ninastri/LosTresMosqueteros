@@ -2,7 +2,19 @@
 #include<iostream>
 #include<conio.h>
 using namespace std;
-  
+
+//ESTRUCTURAS
+struct Preofesores
+{
+	string cedula[15];
+	string PrimerNombre[20];
+	string PrimerApellido[20];
+	//string localidad[30]; //aqui podemos ver lo de la enumeracion para que ingrese por ejemplo 1 para Maldonado y 2 para Cerro Pelado
+	int horasQuiere;
+	int horasTiene;
+
+}unProfesor;
+
 struct Nodo{
 int dato; 
 Nodo *der;
