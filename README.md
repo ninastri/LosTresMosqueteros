@@ -78,10 +78,8 @@ break;
 case 2: cout<<"\nMostrando el arbol completo:\n\n";
 mostrarArbol(arbol,contador);
 cout<<"\n";
-system("pause");
 break;
 }
-system("cls");
 }
 while(opcion !=3);
 }
