@@ -1,7 +1,10 @@
 # LosTresMosqueteros
 #include<iostream>
-#include<conio.h>
+
 using namespace std;
+
+//DECLARACION DE VARIABLES GLOBALES
+int opcion, dato, contador=0;
 
 //ENUMERACIONES
 enum Localidad {Maldonado, CerroPelado, Piriapolis};
@@ -42,23 +45,29 @@ void mostrarArbol(Nodo *;int);
 
 Nodo *arbol = NULL;
 
-int main(){
-menu();
-return 0;
+int main()
+{
+	do
+	{
+		menu();
+	} while(opcion != 5);
+	return 0;
 }
 
 //Funcion de menu
-void menu(){
-int dato, opcion, contador=0;
+void menu()
+{
+	cout <<" --------------------------------------------------------------\n|\t\tBIENVENIDO AL MENU PRINCIPAL                   |\n --------------------------------------------------------------\n|                                                              |\n| Ingrese una opción para navegar.                             |\n|                                                              |\n|\t1)Agregar                                              |\n|\t2)Modificar                                            |\n|\t3)Buscar                                               |\n|\t4)Eliminar                                             |\n|\t5)Salir                                                |\n|                                                              |\n --------------------------------------------------------------\n\n";
+	cin >> opcion;
 
-do{
+/*	do{
 cout<<"\t.:Menu:."<<endl;
 cout<<"1. Insertar un nuevo nodo"<<endl;
 cout<<"2. Mostrar el arbol completo"<<endl;
 cout<<"3. Salir"<<endl;
 cout<<"Opcion: ";
 cin>>opcion;
-
+*/
 switch(opcion){
 case 1: cout<<"\nDigite un numero: ";
 cin>>dato;
