@@ -4,7 +4,7 @@
 using namespace std;
 
 //ESTRUCTURAS
-struct Preofesores
+struct Profesores
 {
 	string cedula[15];
 	string PrimerNombre[20];
